@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/examples",
         glue = {"examples/steps"},
-//        strict = false,
-//        dryRun = true,
+//        strict = true,
+//        dryRun = false,
         snippets = SnippetType.CAMELCASE,
         plugin = {
                 "pretty", "json:target/Cucumber.json",
@@ -19,8 +19,9 @@ import org.junit.runner.RunWith;
 //       }
 //        },
 //        tags = {"@great"}
-//        }, tags = {"@Smoke"}
-        }, tags = {"@IndefiniteStep"}
+//        }, tags = {"@Smoke","@IndefiniteStep"}
+        }, tags = {"@NewMethod"}
+//        }, tags = {"@IndefiniteStep"}
 )
 public class RunAcceptanceTest {
 

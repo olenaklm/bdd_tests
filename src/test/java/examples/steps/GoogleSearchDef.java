@@ -16,6 +16,11 @@ public class GoogleSearchDef extends Browser {
         new GoogleHomePage().open();
     }
 
+    @Given("^I opened Google Page Second$")
+    public void iOpenedGooglePageSecond() {
+        new GoogleHomePage().openSecond();
+    }
+
     @When("^I search the product \"([^\"]*)\"$")
     public void iSearchTheProduct(String query) {
         new GoogleHomePage().enterQuery(query).clickSubmit();

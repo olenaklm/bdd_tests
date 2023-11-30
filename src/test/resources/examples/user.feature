@@ -4,6 +4,7 @@ Feature: Users
 
   Scenario: Print users
     Given some users
-      | name | age |
-      | Jon  | 18  |
-      | Anna | 23  |
+      | name   | age |
+      | Jon    | 18  |
+      | Anna   | 23  |
+      | Mariya | 25  |
